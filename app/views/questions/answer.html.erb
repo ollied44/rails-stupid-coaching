@@ -1,0 +1,15 @@
+<div class="container mt-5">
+  <h1 class="mb-4 text-primary">Answer</h1>
+
+  <blockquote class="ps-3 border-start border-2 border-secondary">
+    <p class="mb-3"><%= @question %></p>
+    <p class="text-muted fst-italic">— You</p>
+  </blockquote>
+
+  <blockquote class="ps-3 border-start border-2 mt-4" style="background-color: #fffdd0;">
+    <p class="mb-3 fw-bold"><%= @answer %></p>
+    <p class="text-muted fst-italic">— Your coach</p>
+  </blockquote>
+
+  <%= link_to "Ask again", ask_path, class: "btn btn-primary mt-4" %>
+</div>
